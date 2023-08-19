@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Heading
+from .models import Title
 
-class WebsiteTitleAdmin(admin.ModelAdmin):
-    list_display = ('Website_Title','Date')
+class TitleAdmin(admin.ModelAdmin):
+    list_display = ('Title','Date')
 
-admin.site.register(Heading, WebsiteTitleAdmin)
+admin.site.register(Title, TitleAdmin)
 
 # Register your models here.

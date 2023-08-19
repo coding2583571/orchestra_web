@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'high',
     'middle',
     'intermediate',
+    'ZZDev',
 ]
 
 MIDDLEWARE = [
