@@ -8,18 +8,28 @@ def web_homepage(request):
     return render(request, 'AmazingWebsite/web_homepage.html', {'website_title':website_title,'bootstrap':bootstrap})
 
 def contact(request):
-    return render(request, 'contact/contact.html')
+    website_title = Title.objects.all()
+
+    return render(request, 'contact/contact.html',{'website_title':website_title})
 
 def high(request):
-    return render(request, 'high/high.html')
+    website_title = Title.objects.all()
+
+    return render(request, 'high/high.html',{'website_title':website_title})
 
 def middle(request):
-    return render(request, 'middle/middle.html')
+    website_title = Title.objects.all()
+
+    return render(request, 'middle/middle.html',{'website_title':website_title})
 
 def intermediate(request):
-    return render(request, 'intermediate/intermediate.html')
+    website_title = Title.objects.all()
+
+    return render(request, 'intermediate/intermediate.html',{'website_title':website_title})
 
 def dev_panel(request):
-    return render(request, 'ZZDev/dev_panel.html')
+    website_title = Title.objects.all()
+
+    return render(request, 'ZZDev/dev_panel.html',{'website_title':website_title})
 
 # Create your views here.
