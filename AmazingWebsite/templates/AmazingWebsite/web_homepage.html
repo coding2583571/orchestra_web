@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<h1>Test</h1>
 
 {% block content %}
 
@@ -34,8 +33,17 @@
 
 </head>
 <body>
-    
+    <div class="container">
+<h1>Home:</h1>
+
+    {% for obj in links %}
+    <a href="{{obj.HyperLink}}" type="button" class="btn btn-secondary">{{obj.Name}}</a> 
+    <br>
+    <br>
+
+    {% endfor %}
 </body>
+</div>
 </html>
 
 {% endblock %}

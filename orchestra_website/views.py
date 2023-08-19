@@ -1,11 +1,12 @@
 from django.shortcuts import render
-from AmazingWebsite.models import Title
+from AmazingWebsite.models import Title, Link
 from ZZDev.models import Bootstrap
 
 def web_homepage(request):
     website_title = Title.objects.all()
     bootstrap = Bootstrap.objects.all()
-    return render(request, 'AmazingWebsite/web_homepage.html', {'website_title':website_title,'bootstrap':bootstrap})
+    links = Link.objects.all()
+    return render(request, 'AmazingWebsite/web_homepage.html', {'website_title':website_title,'bootstrap':bootstrap,'links':links})
 
 def contact(request):
     website_title = Title.objects.all()
