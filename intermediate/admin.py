@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Concert, Contest, Event
-
+from .models import Concert, Contest, Event, Director
 class ConcertAdmin(admin.ModelAdmin):
     list_display = ('concert_name', 'concert_date_and_time', 'Qualifying_Orchestras')
 
@@ -14,3 +13,4 @@ class EventAdmin(admin.ModelAdmin):
 admin.site.register(Concert, ConcertAdmin)
 admin.site.register(Contest, ContestAdmin)
 admin.site.register(Event, EventAdmin)
+admin.site.register(Director)
