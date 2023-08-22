@@ -74,3 +74,162 @@
       </div>
     </div>
   </nav>
+
+
+
+
+
+  <!------------------------------------------------------------------------------------------------------------------------------8-21-->
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <h1 >Home:</h1>
+
+    {% for obj in links %}
+    <a href="{{obj.HyperLink}}" type="button" class="btn btn-secondary">{{obj.Name}}</a>
+    <br>
+    <br>
+
+    {% endfor %}
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+</div>
+
+</div>
+<!----------------------------------------------------------------------------821 2-->.
+
+<nav class="navbar bg-white fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-auto "  style= "font-family: 'Playfair Display', serif;" href="/">{{obj.Title}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" style= "font-family: 'Playfair Display', serif;" id="offcanvasNavbarLabel">{{obj.Title}}</h5>
+        {%endfor%}
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item dropdown">
+              <a class=" nav-link dropdown-toggle" style="font-family: Playfair Display, cursive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                  📅 Calendar 
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">Calendar for all Orchestras</a></li>
+  
+                <li><a class="dropdown-item text-black"  style="font-family: Libre Baskerville, cursive; font-weight: 1;" href="#">Orchestra Calendar for Intermediates</a></li>
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">Orchestra Calendar for Middle School</a></li>
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">Orchestra Calendar for High School</a></li>
+  
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-family: Playfair Display, cursive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               🏫 Schools
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item"  style="font-family: Libre Baskerville, cursive" href="#">Intermediates</a></li>
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">Middle School</a></li>
+                <!--<li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">High School</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-family: Playfair Display, cursive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               📚 Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">Private Lessons</a></li>
+                <!--<li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-family: Playfair Display, cursive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              🪙 Financial 
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">Instrument Rentals</a></li>
+                <li><a class="dropdown-item" style="font-family: Libre Baskerville, cursive" href="#">Sponsor the Jenks Orchestra</a></li>
+               <!-- <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+        </ul>
+    
+      </div>
+    </div>
+  </div>
+</nav>
+
+</head>
+<body>
+<!----> 
+<div class="bg-light">
+  <div class="container">
+      <br>
+      <br>
+      <br>
+      <h1 >Home:</h1>
+
+      {% for obj in links %}
+      <a href="{{obj.HyperLink}}" type="button" class="btn btn-secondary">{{obj.Name}}</a>
+      <br>
+      <br>
+
+      {% endfor %}
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+   
+  </div>
+
+</div>
